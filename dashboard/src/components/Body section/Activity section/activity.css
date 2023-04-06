@@ -1,0 +1,77 @@
+:root {
+  --PrimaryColor: hsl(94, 59%,35%);
+  --HoverColor: #b0f776;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%,100%);
+  --blackColor: hsl(0, 0%,18%);
+  --textColor: hsl(201, 1%,48%);
+  --bgColor: hsl(220, 10%,94%);
+  --greyText: rgb(190, 190,190);
+  --inputColor: hsl(330, 12%,97%);
+  --itemCardColor:hsl(120,5%,87%);
+  --itemCardHover:hsl(120,27%,87%);
+  /* font range typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.activitySection {
+  flex-basis: 30%;
+}
+.activitySection .heading {
+  width: 100%;
+  justify-content: space-between;
+}
+.activitySection .heading h2 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.activitySection .heading .btn {
+  border: 1px solid transparent;
+}
+.activitySection .heading .btn:hover {
+  border: 1px solid var(--PrimaryColor);
+}
+.activitySection .secContainer {
+  margin-top: 1rem;
+}
+.activitySection .secContainer .singleCustomer {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 400px;
+}
+.activitySection .secContainer .singleCustomer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 2px 4px var(--itemCardColor);
+  margin-left: 1rem;
+}
+.activitySection .secContainer .singleCustomer .customerDeatails {
+  flex: 1;
+}
+.activitySection .secContainer .singleCustomer .customerDeatails .name {
+  font-size: var(--h3FontSize);
+  font-weight: 600;
+  color: var(--blackColor);
+  display: block;
+}
+.activitySection .secContainer .singleCustomer .customerDeatails small {
+  font-weight: 500;
+  color: var(--textColor);
+  font-size: var(--smallFontSize);
+}
+
+@media screen and (max-width: 918px) {
+  .activitySection {
+    width: 100%;
+  }
+}/*# sourceMappingURL=activity.css.map */

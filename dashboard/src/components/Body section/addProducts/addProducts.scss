@@ -1,0 +1,137 @@
+:root{
+    --PrimaryColor: hsl(94, 59%,35%);
+    --HoverColor: #b0f776;
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%,100%);
+    --blackColor: hsl(0, 0%,18%);
+    --textColor: hsl(201, 1%,48%);
+    --bgColor: hsl(220, 10%,94%);
+    --greyText: rgb(190, 190,190);
+    --inputColor: hsl(330, 12%,97%);
+    --itemCardColor:hsl(120,5%,87%);
+    --itemCardHover:hsl(120,27%,87%);
+  
+    /* font range typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+
+  .secContainer{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .dataSection{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+        gap: 1rem;
+        overflow: auto;
+
+        .lbl{
+            margin-bottom: .5rem;
+            font-size: var(--smallFontSize);
+            color: rgb(231, 33, 19);
+            margin-left: 1.5rem;
+        }
+        
+
+        .uploadCard{
+            width: 100%;
+            justify-content: space-between;
+            padding: 1rem;
+            align-items: center;
+
+            h1{
+                direction: rtl;
+                font-size: var(--h3FontSize);
+                font-weight: 700;
+                color: var(--blackColor);
+            }
+
+            input{
+                outline: none;
+                border: none;
+                height: 50px;
+                text-align: right;
+                border-radius: 10px;
+                padding: .5rem;
+                color: var(--textColor);
+                box-shadow: 0 2px 4px var(--inputColor);
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+            }
+
+            :hover{
+                background-color: var(--paleGreen);
+                box-shadow: 0 2px 4px var(--paleGreen);
+
+            }
+
+            
+            .fileInput{
+                margin-right: 1rem;
+            }
+
+            .fileInput::-webkit-file-upload-button{
+                height: 100%;
+                width: 30%;
+                outline: none;
+                border: none;
+                text-align: right;
+                border-radius: 10px;
+                padding: .2rem;
+                color: var(--textColor);
+               
+            }
+
+            .decInput{
+                outline: none;
+                border: none;
+                height: 50px;
+                text-align: right;
+                border-radius: 10px;
+                padding: .5rem;
+                color: var(--textColor);
+                box-shadow: 0 2px 4px var(--inputColor);
+
+                :hover{
+                    background-color: var(--paleGreen);
+                    box-shadow: 0 2px 4px var(--paleGreen);
+    
+                }
+            }
+
+           
+        }
+
+        .btn{
+            width: 100%;
+            height: 70px;
+            border-radius: 10px;
+            color: var(--blackColor);
+            box-shadow: 0 2px 4px var(--paleGreen);
+            background-color: var(--paleGreen);
+
+            
+        }
+
+        .btn:hover{
+            background-color: var(--HoverColor);
+            box-shadow: 0 2px 4px var(--paleGreen);
+
+        }
+    }
+  }

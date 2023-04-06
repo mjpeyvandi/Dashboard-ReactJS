@@ -1,0 +1,197 @@
+:root {
+  --PrimaryColor: hsl(94, 59%,35%);
+  --HoverColor: #b0f776;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%,100%);
+  --blackColor: hsl(0, 0%,18%);
+  --textColor: hsl(201, 1%,48%);
+  --bgColor: hsl(220, 10%,94%);
+  --greyText: rgb(190, 190,190);
+  --inputColor: hsl(330, 12%,97%);
+  /* font range typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.sidebar {
+  background: var(--whiteColor);
+  box-shadow: 1px 0px 4px var(--greyText);
+  width: 18%;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar .logoDiv {
+  padding: 1.5rem 1.5rem 0;
+  cursor: pointer;
+}
+.sidebar .logoDiv img {
+  max-width: 20px;
+  margin-right: 0.5rem;
+  background: var(--inputColor);
+  border-radius: 2px;
+  padding: 0.2rem;
+}
+.sidebar .logoDiv h2 {
+  font-size: var(--h2FontSize);
+  color: var(--PrimaryColor);
+}
+.sidebar .menuDiv .titleMenu, .sidebar .settingDiv .titleMenu {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 0 1.5rem 1.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: -25px;
+}
+.sidebar .menuDiv .menuLists .listItem, .sidebar .settingDiv .menuLists .listItem {
+  position: relative;
+  width: 100%;
+  padding: 0.2rem 1.5rem;
+}
+.sidebar .menuDiv .menuLists .listItem::before, .sidebar .settingDiv .menuLists .listItem::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  height: 0%;
+  width: 5px;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: var(--PrimaryColor);
+}
+.sidebar .menuDiv .menuLists .listItem .menuLink, .sidebar .settingDiv .menuLists .listItem .menuLink {
+  color: var(--greyText);
+  font-weight: 500;
+}
+.sidebar .menuDiv .menuLists .listItem .menuLink .icon, .sidebar .settingDiv .menuLists .listItem .menuLink .icon {
+  margin-left: 0.5rem;
+}
+.sidebar .menuDiv .menuLists .listItem:hover .menuLink, .sidebar .settingDiv .menuLists .listItem:hover .menuLink {
+  color: var(--PrimaryColor);
+  transition: 1ms;
+}
+.sidebar .menuDiv .menuLists .listItem:hover::before, .sidebar .settingDiv .menuLists .listItem:hover::before {
+  height: 100%;
+  transition: 0.3s ease;
+}
+.sidebar .sidebarCard {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.sidebar .sidebarCard .icon {
+  position: absolute;
+  background: var(--HoverColor);
+  border: 10px solid var(--whiteColor);
+  font-size: 3rem;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 100;
+}
+.sidebar .sidebarCard .cardContent {
+  position: relative;
+  background: var(--HoverColor);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.6rem;
+}
+.sidebar .sidebarCard .cardContent .h3 {
+  font-size: var(--h3FontSize);
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-weight: 800;
+  color: var(--blackColor);
+}
+.sidebar .sidebarCard .cardContent p {
+  font-size: var(--normalFontSize);
+  padding-bottom: 1rem;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.sidebar .sidebarCard .cardContent .btn {
+  position: relative;
+  color: var(--textColor);
+  z-index: 1000;
+}
+.sidebar .sidebarCard .cardContent .circle1, .sidebar .sidebarCard .cardContent .circle2 {
+  position: absolute;
+  opacity: 0.7;
+  background: var(--paleGreen);
+  border-radius: 50%;
+}
+.sidebar .sidebarCard .cardContent .circle1 {
+  height: 100px;
+  width: 100px;
+  top: -50px;
+  left: -50px;
+}
+.sidebar .sidebarCard .cardContent .circle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -80px;
+  right: -70px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 880px) {
+  .sidebar {
+    padding-bottom: 2rem;
+  }
+  .sidebar .sidebarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 745px) {
+  .sidebar .logoDiv {
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem 0.5 0;
+  }
+  .sidebar .logoDiv img {
+    min-width: 50px;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .sidebar .logoDiv h2 {
+    display: none;
+  }
+  .sidebar .menuDiv .titleMenu, .sidebar .menuDiv .smallText, .sidebar .settingDiv .titleMenu, .sidebar .settingDiv .smallText {
+    display: none;
+  }
+  .sidebar .menuDiv .menuLists .listItem .menuLink, .sidebar .settingDiv .menuLists .listItem .menuLink {
+    justify-content: center;
+  }
+  .sidebar .menuDiv .menuLists .listItem .menuLink .icon, .sidebar .settingDiv .menuLists .listItem .menuLink .icon {
+    font-size: var(--h1FontSize);
+  }
+}
+@media screen and (max-width: 390px) {
+  .sidebar .logoDiv {
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem 0.3 0;
+  }
+  .sidebar .logoDiv img {
+    min-width: 30px;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .sidebar .menuDiv .menuLists .listItem, .sidebar .settingDiv .menuLists .listItem {
+    padding: 0.2rem 0.5rem;
+  }
+  .sidebar .menuDiv .menuLists .listItem .menuLink, .sidebar .settingDiv .menuLists .listItem .menuLink {
+    justify-content: center;
+  }
+  .sidebar .menuDiv .menuLists .listItem .menuLink .icon, .sidebar .settingDiv .menuLists .listItem .menuLink .icon {
+    font-size: var(--h2FontSize);
+  }
+}/*# sourceMappingURL=sidebar.css.map */
