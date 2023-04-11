@@ -109,7 +109,7 @@ const Top = ()=>{
                 
             </div>
 
-                <div className="rightCard flex">
+                <div className="rightCard flex" dir='rtl'>
                     <h1>گیاهان خودت رو پرورش بده و بفروش</h1>
                     <p>در دنیای امروز محصولات طبیعی با سرعت در حال رشد هستند!</p>
                     
