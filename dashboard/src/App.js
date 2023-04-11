@@ -7,6 +7,7 @@ import Orders from './components/Body section/orders/orders'
 import Products from './components/Body section/products/products'
 import Product from './components/Body section/product/product'
 import Add from './components/Body section/addProducts/addProducts';
+import Search from './components/UI/Search/search';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Route>
 
           <Route path='/add' element={<Add/>}/>
+          <Route path='/search' element={<Search/>}/>
           
         </Routes> 
         <Sidebar/>

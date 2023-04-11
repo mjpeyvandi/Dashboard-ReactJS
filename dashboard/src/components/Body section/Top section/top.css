@@ -39,25 +39,6 @@
   overflow: hidden;
   box-shadow: 0 2px 4px var(--inputColor);
 }
-.headerSection .searchBar {
-  padding: 1rem 2rem;
-  background: var(--whiteColor);
-  border-radius: 5px;
-  gap: 1rem;
-  box-shadow: 0 2px 4px var(--inputColor);
-}
-.headerSection .searchBar input {
-  border: none;
-  outline: none;
-  background: none;
-  text-align: right;
-}
-.headerSection .searchBar .icon {
-  color: var(--textColor);
-}
-.headerSection .searchBar .icon:hover {
-  color: var(--PrimaryColor);
-}
 .headerSection h1 {
   font-size: var(--h1FontSize);
   font-weight: 700;

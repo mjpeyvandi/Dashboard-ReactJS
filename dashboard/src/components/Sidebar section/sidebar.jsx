@@ -64,9 +64,20 @@ const Sidebar = ()=>{
                     </li>
 
                     <li className="listItem">
-                        <Link to="/orders" className="menuLink flex">
+                        <Link to="/" className="menuLink flex">
                             <span className="smallText">
                             سفارش های مشتریان
+                            </span>
+                            <MdDeliveryDining className="icon"/>
+
+                        </Link>
+                        
+                    </li>
+
+                    <li className="listItem">
+                        <Link to="/search" className="menuLink flex">
+                            <span className="smallText">
+                             جستجو محصول
                             </span>
                             <MdDeliveryDining className="icon"/>
 
